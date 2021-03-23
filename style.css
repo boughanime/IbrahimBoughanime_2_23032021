@@ -1,0 +1,152 @@
+/* ------- Elément principaux de la page ------- */
+body
+{
+    font-family: "Raleway","Arial","Comic Sans MS","Trebuchet MS" ;
+    color: black;
+}
+
+#bloc_page
+{
+    width: 900px;
+
+}
+
+/* ------- Header ------- */
+
+header
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width:85px;
+    height: 65px;
+}
+
+/* ------- Navigation ------- */
+nav ul 
+
+{
+    list-style-type: none;
+    display: flex;
+    
+    
+}
+
+nav li
+{
+    display: flex;
+    margin-right: 40px;
+    
+    
+}
+
+nav a 
+{
+    
+    display: flex;
+    font-size: large;
+    font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
+    color: grey;
+    padding-bottom: 7px;
+    text-decoration: none;
+    
+}
+
+#banniere_rechercher ul
+{
+    display: flex;
+    font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
+    justify-content: space-between;
+
+}
+
+#banniere_rechercher li
+{
+    list-style-type: none;
+    display: flex;
+
+}
+
+
+
+/* ------ Corps ------- */
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+article, aside
+{
+    text-align: justify;
+}
+
+
+#photo_hébergements
+{
+    display: flex;
+    
+}
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color:#F2F2F2;
+    border: 3px #F2F2F2 solid;
+    border-radius: 25px / 25px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+aside img
+{
+    margin-right: 2px;
+}
+
+
+
+
+article
+{
+    border: 3px #F2F2F2;
+    background-color:#F2F2F2;
+    border-radius: 25px / 25px;
+    margin-right: 35px;
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+/* ------- Footer ------- */
+footer
+{
+    background-color:#F2F2F2;
+    list-style-type: none;
+    border-radius: 25px / 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+footer li 
+{
+    list-style-type: none;
+    display: flex;
+}
