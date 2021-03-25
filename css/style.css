@@ -77,14 +77,15 @@ nav a
     font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
     justify-content: flex-start;
     justify-content: space-between;
-    border-radius: 25px /0 px;
-    
-
+    border-radius: 25px;
 }
-
 #banniere_rechercher li
+
 {
     list-style-type: none;
+}
+#banniere_rechercher a
+{ 
     display: flex;  
     justify-content: space-between;
     border: 3px #F2F2F2 solid;
@@ -120,15 +121,41 @@ article aside
 aside img
 {
     width: 200px;
-    padding: 20px;
+    height: 150px;
+    padding: 10px;
+    border: 3px #FFFFFF solid;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+
+aside figcaption
+{
+    display: flex;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding: 10px;
+    border:  #FFFFFF solid;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+
 }
 
 #photo_hébergements img
 {
+   
     width: 200px;
-    padding: 20px;
+    height: 150px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #FFFFFF;  
 }
-
+photo_hébergements
+{
+    justify-content: space-between;
+}
 
 
 aside
