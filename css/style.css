@@ -186,8 +186,39 @@ article
     position: relative;
     
 }
+/* ------- Activités à Marseille------- */
+section #Activites
+{
+    display: flex;
+    justify-content: left;
+}
+#Activites .Petite_taille img
+{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px/25px;
+    background-color: #FFFFFF;  
+}
+#Activites .Grande_taille img
+{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px/25px;
+    background-color: #FFFFFF;   
+}
+.grande_taille
+{
+    
 
-
+}
+.Petite_taille
+{
+   
+}
 
 
 
