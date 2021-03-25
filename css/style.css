@@ -68,14 +68,17 @@ nav a
 {
     display: flex;
     font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
+    justify-content: flex-start;
     justify-content: space-between;
+    
 
 }
 
 #banniere_rechercher li
 {
     list-style-type: none;
-    display: flex;
+    display: flex;  
+    justify-content: space-between;
 
 }
 
