@@ -22,20 +22,25 @@ header
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    padding: 10px;
+    margin: 8px;
 }
 
 #logo img
 {
-    width:85px;
-    height: 65px;
+    width:100px;
+    height: 60px;
 }
 
 /* ------- Navigation ------- */
+
 nav ul 
 
 {
     list-style-type: none;
     display: flex;
+    padding: 20px;
+    margin: 10px;
     
     
 }
@@ -43,7 +48,7 @@ nav ul
 nav li
 {
     display: flex;
-    margin-right: 40px;
+    margin-right: 50px;
     
     
 }
@@ -54,14 +59,29 @@ nav a
     display: flex;
     font-size: large;
     font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
-    color: grey;
+    color: blue;
     padding-bottom: 7px;
     text-decoration: none;
     
 }
+
+#intro 
+{
+    margin: 10px;
+    padding: 0 8px;
+    
+}
+
+#intro h2
+{
+    margin-bottom: -15px;
+}
+
+
 #bouton 
 {
     display: flex;
+    margin-bottom: 25px;
 }
 
 #bouton i
@@ -71,33 +91,40 @@ nav a
     border-radius: 25px / 25px;
 }
 
-#banniere_rechercher ul
+#banniere_rechercher *
 {
-    display: flex;
-    font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
-    justify-content: flex-start;
-    justify-content: space-between;
-    border-radius: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
-#banniere_rechercher li
 
+#filter ul
 {
     list-style-type: none;
+    display: flex;
+    margin: 10px;
+    
+
+ 
 }
-#banniere_rechercher a
-{ 
-    display: flex;  
-    justify-content: space-between;
-    border: 3px #F2F2F2 solid;
-    border-radius: 25px / 25px;
+
+#filter li 
+{
+    width: 190px;
+    font-size: large;
+    margin: 8px;
+
 
 }
-#banniere_rechercher i 
+#filter li i
+
 {
-    border: 3px #DEEBFF solid;
-    background-color: #DEEBFF;
-    border-radius: 25px / 25px;
+    margin: 8px;
+   
 }
+
+
 
 
 
