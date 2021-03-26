@@ -152,7 +152,7 @@ aside figcaption
     border-radius: 20px;
     background-color: #FFFFFF;  
 }
-photo_hébergements
+#photo_hébergements
 {
     justify-content: space-between;
 }
@@ -210,15 +210,6 @@ section #Activites
     border-radius: 25px/25px;
     background-color: #FFFFFF;   
 }
-.grande_taille
-{
-    
-
-}
-.Petite_taille
-{
-   
-}
 
 
 
@@ -227,17 +218,52 @@ section #Activites
 
 
 /* ------- Footer ------- */
-footer
-{
-    background-color:#F2F2F2;
-    list-style-type: none;
-    border-radius: 25px / 25px;
-    display: flex;
-    justify-content: space-between;
 
-}
-footer li 
+.footer
 {
-    list-style-type: none;
+ background-color: #F2F2F2 ;   
+ padding: 8px 0;
+}
+
+.footer *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    max-width: 3170px;
+    margin: 40px;
+}
+
+.row
+{
     display: flex;
+    flex-wrap: wrap;
+}
+.footer ul
+{
+ list-style: none;
+ padding-left: O;
+}
+
+.footer ul li 
+{
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+.footer_col
+{
+    width: 33%;
+    padding: O;
+}
+
+.footer_col h3
+{
+    font-size: 19px;
+    margin-bottom: 13px;
+
 }
