@@ -5,6 +5,12 @@ body
     color: black;
 }
 
+#bloc_page 
+{
+    margin: 1%;
+    padding: 0 1%;
+
+}
 
 
 /* ------- Header ------- */
@@ -91,11 +97,10 @@ nav a
     border-radius: 25px / 25px;
 }
 
-#banniere_rechercher *
+#filter #row
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -103,27 +108,27 @@ nav a
 {
     list-style-type: none;
     display: flex;
-    margin: 10px;
     
 
  
 }
 
-#filter li 
+#filter ul a 
 {
-    width: 190px;
-    font-size: large;
-    margin: 8px;
+   display: inline-block;
+   padding: 0 30px;
+   display: flex;
+   align-items: flex-end
 
 
 }
 #filter li i
 
 {
-    margin: 8px;
-   
+    display: inline-block;
+    display: flex;
+    width: 40px; 
 }
-
 
 
 
@@ -132,87 +137,97 @@ nav a
 section
 {
     display: flex;
-    margin-bottom: 20px;
 }
 
 article
 {
-    width: 70%;
+    
+    border: 1% #F2F2F2;
+    background-color:#F2F2F2;
+    border-radius: 25px / 25px;
+    margin-right: 35px;
+    position: relative;
+    width: 60%;
+    background-color: crimson;
+    
 }
-
-article aside
+#photo_hébergements
 {
-    text-align: justify;
+    
+    display: flex;
+    flex-direction: column;
+    
 }
-
-aside img
+#photo_hébergements .row
 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1% 2% 4% 2%;
+}
+#photo_hébergements img
+{
+   display: flex;
     width: 200px;
     height: 150px;
-    padding: 10px;
-    border: 3px #FFFFFF solid;
+    object-fit: cover;
+    padding: 1%;
     border-radius: 20px;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF;  
+    justify-content: space-around; 
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#F2F2F2;
+    border:  #F2F2F2 solid;
+    border-radius: 25px / 25px;
+    padding: 1%;
+    font-size: 0.9em;
+    width: 30%;
+    
+
+}
+aside #row
+{
+    background-color: crimson;
+    padding: 1% 2% 4% 2%;
+    display: flex;
+    flex-direction: column;
+  
 }
 
 
-aside figcaption
+aside img
 {
     display: flex;
     width: 200px;
     height: 150px;
     object-fit: cover;
-    padding: 10px;
-    border:  #FFFFFF solid;
+    padding: 1%;
     border-radius: 20px;
     background-color: #FFFFFF;
-
-}
-
-#photo_hébergements img
-{
-   
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #FFFFFF;  
-}
-#photo_hébergements
-{
-    justify-content: space-between;
-}
-
-
-aside
-{
-    flex: 1.2;
-    position: relative;
-    background-color:#F2F2F2;
-    border: 3px #F2F2F2 solid;
-    border-radius: 25px / 25px;
-    padding: 10px;
-    font-size: 0.9em;
-}
-
-aside img
-{
-    margin-right: 2px;
-}
-
-
-
-
-article
-{
-    border: 3px #F2F2F2;
-    background-color:#F2F2F2;
-    border-radius: 25px / 25px;
-    margin-right: 35px;
-    position: relative;
+    justify-content: space-around;
     
 }
+aside .img
+{
+    padding: 1% 2% 4% 2%;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ------- Activités à Marseille------- */
 section #Activites
 {
