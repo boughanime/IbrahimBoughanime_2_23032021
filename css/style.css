@@ -137,6 +137,7 @@ nav a
 section
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 article
@@ -148,7 +149,7 @@ article
     margin-right: 35px;
     position: relative;
     width: 60%;
-    background-color: crimson;
+   
     
 }
 #photo_hébergements
@@ -192,8 +193,7 @@ aside
 }
 aside #row
 {
-    background-color: crimson;
-    padding: 1% 2% 4% 2%;
+    
     display: flex;
     flex-direction: column;
   
@@ -203,7 +203,7 @@ aside #row
 aside img
 {
     display: flex;
-    width: 200px;
+    width: 50%;
     height: 150px;
     object-fit: cover;
     padding: 1%;
@@ -229,13 +229,29 @@ aside .img
 
 
 /* ------- Activités à Marseille------- */
-section #Activites
+section 
 {
     display: flex;
-    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
 }
-#Activites .Petite_taille img
+section h3
 {
+  display: flex;
+  display: flex;
+}
+section #img_activ
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.Petite_taille img
+{
+    display: flex;
     width: 300px;
     height: 180px;
     object-fit: cover;
@@ -243,7 +259,7 @@ section #Activites
     border-radius: 25px/25px;
     background-color: #FFFFFF;  
 }
-#Activites .Grande_taille img
+.Grande_taille img
 {
     width: 300px;
     height: 400px;
