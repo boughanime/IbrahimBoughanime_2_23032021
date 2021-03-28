@@ -97,6 +97,9 @@ nav a
     border-radius: 25px / 25px;
 }
 
+
+/* ------ Filteres ------ */
+
 #filter #row
 {
     display: flex;
@@ -133,8 +136,8 @@ nav a
 
 
 
-/* ------ Corps ------- */
-section
+/* ------ Hébergements à Marseille ------- */
+#hebergements
 {
     display: flex;
     flex-wrap: wrap;
@@ -177,6 +180,8 @@ article
     background-color: #FFFFFF;  
     justify-content: space-around; 
 }
+
+/* ------ Les plus populaires ------- */
 
 aside
 {
@@ -229,44 +234,46 @@ aside .img
 
 
 /* ------- Activités à Marseille------- */
-section 
+#activites
 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 2% 0 3% 0;
+    
+}
+
+#activites #img_activ
+{
+    
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    
-}
-section h3
-{
-  display: flex;
-  display: flex;
-}
-section #img_activ
-{
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 .Petite_taille img
 {
     display: flex;
+    flex-direction: column;
     width: 300px;
     height: 180px;
     object-fit: cover;
-    padding: 15px;
-    border-radius: 25px/25px;
-    background-color: #FFFFFF;  
+    border-radius: 25px/25px; 
+}
+.Petite_taille 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
 }
 .Grande_taille img
 {
     width: 300px;
     height: 400px;
     object-fit: cover;
-    padding: 15px;
-    border-radius: 25px/25px;
-    background-color: #FFFFFF;   
+    border-radius: 25px/25px; 
 }
 
 
