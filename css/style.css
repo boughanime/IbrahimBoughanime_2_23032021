@@ -260,25 +260,34 @@ article
     flex-direction: column;
     
 }
-#photo_hébergements .row
+#photo_hébergements .colonnehebergement
 {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 1% 2% 4% 2%;
+    justify-content: space-around;
 }
 #photo_hébergements img
 {
-   display: flex;
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    padding: 1%;
-    border-radius: 20px;
-    background-color: #FFFFFF;  
-    justify-content: space-around; 
-}
 
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.figurehebergement
+{
+    margin: 20px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 25px;
+    box-shadow: 2px 1px 5px 2px rgb(209 209 209);
+}
+.textehebergement
+{
+    margin-bottom: 10px;
+    line-height: 5px;
+    margin-left: 13px;
+}
 /* ------ Les plus populaires ------- */
 
 aside
@@ -296,7 +305,7 @@ aside
     
 
 }
-aside #row
+aside #contenupopulaires
 {
     
     display: flex;
@@ -307,19 +316,24 @@ aside #row
 
 aside img
 {
-    display: flex;
-    width: 50%;
+    width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    justify-content: space-around;
+    border-radius: 20px 0 0 20px;
     
 }
-aside .img
+.lignespopulaire
 {
-    padding: 1% 2% 4% 2%;
-    flex-wrap: wrap;
+    border-radius: 25px;
+    display: flex;
+    background-color: white;
+    padding: 4px;
+    box-shadow: 2px 1px 5px 2px rgb(209 209 209);
+}
+
+.textepopulaire
+{
+    padding-left: 20px ;
 }
 
 
@@ -335,54 +349,82 @@ aside .img
 /* ------- Activités à Marseille------- */
 #activites
 {
-    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contenuactivite
+{
     flex-wrap: wrap;
-   
-    padding: 2% 0 3% 0;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+#columnimg1
+{
+    margin-right: -50px;
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#columnimg2
+{
+    margin-right: -30px;
+    margin-left: -70px;
+    display: flex;
+    flex-direction: column;
+}
+
+#lingeimg1
+{
+    margin-left: -30px;
     
 }
 
-#activites #img_activ
-{
-    
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    
-}
-.Petite_taille img
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 300px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 25px/25px; 
-}
-.Petite_taille 
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-  
-}
 .Grande_taille img
 {
-    display: flex;
-    flex-wrap: wrap;
+    
     width: 300px;
     height: 400px;
     object-fit: cover;
-    border-radius: 25px/25px; 
+    border-radius: 20px 20px 0px 0px;
 }
-.text_img
+
+.Petite_taille1 img
 {
-    border: black solid;
-    border-radius: 0% 0% 10% 10% ;
-    
+    width: 310px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.Petite_taille2 img
+{
+    width: 310px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.Petite_taille3 img
+{
+    width: 310px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.Grande_taille, .Petite_taille1, .Petite_taille2, .Petite_taille3
+{   border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 2px 1px 5px 2px rgb(209 209 209);
+}
+.titrephotoactivités
+{
+    margin-left: 15px;
 
 }
 
