@@ -3,12 +3,14 @@ body
 {
     font-family: "Raleway","Arial","Comic Sans MS","Trebuchet MS" ;
     color: black;
+    margin: 0;
 }
 
 #bloc_page 
 {
-    margin: 1%;
-    padding: 0 1%;
+    margin: auto;
+    max-width: 1440px;
+    justify-content: center;
 
 }
 
@@ -19,17 +21,25 @@ header
 {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 
 }
 
 #logo img
 {
-    height: 60px;
+   width: 140px;
 }
-
+#inscriremobile
+{
+    display: none;
+}
 nav ul 
 
 {
+    display: flex;
+    flex-wrap: wrap-reverse;
     list-style-type: none;
     display: flex;
     padding: 20px;
@@ -50,14 +60,28 @@ nav a
 {
     
     display: flex;
-    font-size: large;
-    font-family: "Arial","Comic Sans MS","Trebuchet MS","Arial Black";
-    color: blue;
-    padding-bottom: 7px;
+    font-size: 1.3em;  
+    color: #181818;
     text-decoration: none;
+    line-height: 20px;
+    padding-top: 35px;
+    padding-left: 10px;
+    border-top: 2px solid transparent;
     
 }
 
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    line-height: 20px;
+    padding-top: 35px;
+}
+
+.inscrire
+{
+    color: #0065FC;
+}
 
 /* ------- Navigation ------- */
 
@@ -97,7 +121,10 @@ nav a
     padding: 12px;
 }
 
-
+#submitrecherche 
+{
+    display: none;
+}
 #textesearch
 {
     display: inline;
@@ -225,18 +252,10 @@ nav a
     margin-left: 30px;
     margin-top: 40px;
 }
-#tetrepopulaire
-{
-    margin-left: 20px;
-    margin-right: 21px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-}
+
 #titreaafficher
 {
-    margin-left: 25px;
-    margin-top: 30px;
+    margin-left: 35px;
     font-weight: bold;
     margin-bottom: 40px;
 }
@@ -264,7 +283,8 @@ article
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 #photo_hébergements img
 {
@@ -276,7 +296,7 @@ article
 }
 .figurehebergement
 {
-    margin: 20px;
+    margin: 0;
     background-color: white;
     padding: 4px;
     border-radius: 25px;
@@ -288,6 +308,25 @@ article
     line-height: 5px;
     margin-left: 13px;
 }
+
+.colonnehebergement i
+{
+color: #0065fc;
+}
+
+.textepopulaire i
+{
+    color: #0065fc;
+}
+
+
+.figurehebergement:hover
+{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+}
+
+
 /* ------ Les plus populaires ------- */
 
 aside
@@ -322,6 +361,7 @@ aside img
     border-radius: 20px 0 0 20px;
     
 }
+
 .lignespopulaire
 {
     border-radius: 25px;
@@ -331,12 +371,26 @@ aside img
     box-shadow: 2px 1px 5px 2px rgb(209 209 209);
 }
 
+
+
 .textepopulaire
 {
     padding-left: 20px ;
 }
+#tetrepopulaire
+{
+    margin-left: 20px;
+    margin-right: 21px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
-
+.lignespopulaire:hover
+{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+}
 
 
 
@@ -357,37 +411,32 @@ aside img
 {
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
-    margin-left: -30px;
-    margin-right: -30px;
+    justify-content: space-between;
+
 }
 
 #columnimg1
 {
-    margin-right: -50px;
-    margin-left: -50px;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #columnimg2
 {
-    margin-right: -30px;
-    margin-left: -70px;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-#lingeimg1
-{
-    margin-left: -30px;
-    
-}
+
 
 .Grande_taille img
 {
     
-    width: 300px;
+    width: 330px;
     height: 400px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
@@ -417,9 +466,15 @@ aside img
     border-radius: 20px 20px 0px 0px;
 }
 
-.Grande_taille, .Petite_taille1, .Petite_taille2, .Petite_taille3
-{   border-radius: 20px;
-    border: 1px solid #f2f2f2;
+.Petite_taille1, .Petite_taille2, .Petite_taille3
+{   margin: 0;
+    border-radius: 20px;
+    box-shadow: 2px 1px 5px 2px rgb(209 209 209);
+}
+.Grande_taille
+{   margin: 0;
+    width: 100%;
+    border-radius: 20px;
     box-shadow: 2px 1px 5px 2px rgb(209 209 209);
 }
 .titrephotoactivités
@@ -427,9 +482,21 @@ aside img
     margin-left: 15px;
 
 }
+.Grande_taille .figcaptionactivités
+{
+    padding: 1px;
+}
 
+#titreactivites
+{
+   margin-bottom: 30px;
+}
 
-
+#contenuactivite figure:hover
+{
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+}
 
 
 
@@ -437,6 +504,9 @@ aside img
 
 .footer
 {
+ max-width: 1700px;
+ justify-content: center;
+ margin: auto;
  background-color: #F2F2F2 ;   
  padding: 8px 0;
  width: 100%;
@@ -490,17 +560,11 @@ aside img
     font-size: 19px;
     margin-bottom: 5%;
     
+}
 
-}
-@media(max-width: 767px){
-    .footer_col{
-        width: 100%;
-        margin-bottom: 5%;
-    }
-    .footer ul li 
+footer li:hover
 {
-    font-size: 16px;
-    margin-bottom: 2%;
-   
+    color: #0065fc;
+    font-weight: bolder;
 }
-}
+
