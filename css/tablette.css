@@ -122,7 +122,7 @@ margin-top: -10px;
 /* ------- Activités à Marseille------- */
 #activites
 {
- width: 97%;
+ width: 100%;
  margin-left: 15px;
 }
 
@@ -133,19 +133,25 @@ margin-top: -10px;
 
 #lingeimg1
 {
-    width: 50%;
+    width: 48%;
+    display: block;
 }
 #columnimg1
 {
-    width: 50%;
+    
+    display: block;
+    width: 48%;
+    margin-right: 15px;
 }
 #columingnd2
 {
-    width: 50%;
+    width: 48%;
 }
 #columnimg2
 {
-    width: 50%;
+    display: block;
+    width: 48%;
+    margin-right: 15px;
 }
 
 .Grande_taille img 
