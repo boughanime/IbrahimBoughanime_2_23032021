@@ -1,0 +1,179 @@
+@media screen and (min-width: 479px) and (max-width: 1296px) {
+
+
+header
+{
+  MARGIN: 10px; 
+}
+
+#filtretotal
+{
+    margin-left: 20px;
+}
+
+nav ul
+{
+  padding: unset;
+}
+
+/* ------ Hébergements à Marseille ------- */
+
+#aside
+{
+    width: 97%;
+    flex: unset;
+    margin: unset;
+    margin-bottom: 20px;
+    PADDING-BOTTOM: 50px;
+    PADDING-RIGHT: 1px;
+    padding-left: 1px;
+    flex-wrap: wrap;
+        
+}       
+#tetrepopulaire 
+{
+    margin-left: 20px;
+    margin-right: 21px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#aside #contenupopulaires
+{
+flex-direction: row;
+WIDTH: 100%;
+justify-content: space-around;
+}
+
+
+#aside img 
+{
+    min-width: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.figurligne 
+{
+    width: 30%;
+    margin-right: 2%;
+   
+}
+
+.lignespopulaire 
+{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.textepopulaire {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: auto;
+    font-size: 1vmax;
+}
+
+#textphoto
+{
+    min-width: 120px;
+    width: auto;
+}
+
+#textphoto p
+{
+margin-top: -10px;
+
+}
+
+#etoile
+{
+    min-width: 120px;
+    width: auto;
+}
+
+/* ------ Hébergements à Marseille ------- */
+
+
+#article
+{
+   width: 97%;
+   border-radius: unset;
+}
+
+#photo_hébergements .colonnehebergement
+
+{
+ justify-content: space-between;
+ margin-left: 15px;
+
+}
+#photo_hébergements img 
+{
+    width: 100%;
+}
+
+/* ------- Activités à Marseille------- */
+#activites
+{
+ width: 97%;
+ margin-left: 15px;
+}
+
+#contenuactivite
+{
+    width: 100%;
+}
+
+#lingeimg1
+{
+    width: 50%;
+}
+#columnimg1
+{
+    width: 50%;
+}
+#columingnd2
+{
+    width: 50%;
+}
+#columnimg2
+{
+    width: 50%;
+}
+
+.Grande_taille img 
+{
+    width: 100%;
+    height: 280px;
+}
+
+.Petite_taille1 img, .Petite_taille3 img, .Petite_taille2 img
+{
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+/* ------- Footer ------- */
+.container 
+{
+    margin-left: 45px;
+}
+
+}
+
+
+
+
+
+

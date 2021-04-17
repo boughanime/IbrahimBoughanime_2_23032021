@@ -259,8 +259,13 @@ nav a:hover
     font-weight: bold;
     margin-bottom: 40px;
 }
+#titreaafficher:hover
+{
+    color: #0065fc;
+    font-weight: bolder;
+}
 
-article
+#article
 {
     
     background-color:#F2F2F2;
@@ -279,6 +284,13 @@ article
     flex-direction: column;
     
 }
+.figurligne
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+
 #photo_hébergements .colonnehebergement
 {
     display: flex;
@@ -304,8 +316,9 @@ article
 }
 .textehebergement
 {
+    
     margin-bottom: 10px;
-    line-height: 5px;
+    line-height: 8px;
     margin-left: 13px;
 }
 
@@ -326,10 +339,21 @@ color: #0065fc;
     transform: scale(1.015);
 }
 
+.prixbas
+{
+  font-weight: bold;
+}
+
+.prixbas
+{
+  font-weight: bold;
+}
+
+
 
 /* ------ Les plus populaires ------- */
 
-aside
+#aside
 {
     display: flex;
     flex-direction: column;
@@ -344,7 +368,7 @@ aside
     
 
 }
-aside #contenupopulaires
+#aside #contenupopulaires
 {
     
     display: flex;
@@ -353,7 +377,7 @@ aside #contenupopulaires
 }
 
 
-aside img
+#aside img
 {
     width: 150px;
     height: 150px;
@@ -470,6 +494,7 @@ aside img
 {   margin: 0;
     border-radius: 20px;
     box-shadow: 2px 1px 5px 2px rgb(209 209 209);
+    padding-bottom: 1px;
 }
 .Grande_taille
 {   margin: 0;
@@ -486,6 +511,7 @@ aside img
 {
     padding: 1px;
 }
+
 
 #titreactivites
 {
@@ -504,7 +530,6 @@ aside img
 
 .footer
 {
- max-width: 1700px;
  justify-content: center;
  margin: auto;
  background-color: #F2F2F2 ;   
@@ -515,7 +540,7 @@ aside img
 
 .footer *
 {
-    margin: 0;
+    
     padding: 0;
     box-sizing: border-box;
   
@@ -524,8 +549,9 @@ aside img
 
 .container
 {
-    max-width: 3170px;
-    margin: 40px;
+    max-width: 1440px;
+    margin-top: 20px;
+    margin: auto;
    
     
 }
@@ -562,9 +588,13 @@ aside img
     
 }
 
-footer li:hover
+footer .figurlignefooter:hover
 {
     color: #0065fc;
     font-weight: bolder;
 }
-
+.figurlignefooter
+{
+    text-decoration: none;
+    color: #000000;
+}
