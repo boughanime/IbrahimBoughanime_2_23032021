@@ -1,4 +1,4 @@
-@media screen and (min-width: 479px) and (max-width: 1296px) {
+@media screen and (min-width: 701px) and (max-width: 1296px) {
 
 
 header
@@ -80,13 +80,13 @@ justify-content: space-around;
     font-size: 1vmax;
 }
 
-#textphoto
+.textphoto
 {
     min-width: 120px;
     width: auto;
 }
 
-#textphoto p
+.textphoto p
 {
 margin-top: -10px;
 
@@ -104,17 +104,17 @@ margin-top: -10px;
 #article
 {
    width: 97%;
-   border-radius: unset;
+   
 }
 
-#photo_hébergements .colonnehebergement
+#photo_hebergements .colonnehebergement
 
 {
  justify-content: space-between;
  margin-left: 15px;
 
 }
-#photo_hébergements img 
+#photo_hebergements img 
 {
     width: 100%;
 }
@@ -122,8 +122,8 @@ margin-top: -10px;
 /* ------- Activités à Marseille------- */
 #activites
 {
- width: 100%;
  margin-left: 15px;
+ margin-right: 15px;
 }
 
 #contenuactivite
@@ -141,17 +141,19 @@ margin-top: -10px;
     
     display: block;
     width: 48%;
-    margin-right: 15px;
+    
 }
 #columingnd2
 {
     width: 48%;
+    
 }
 #columnimg2
 {
     display: block;
     width: 48%;
-    margin-right: 15px;
+    
+    
 }
 
 .Grande_taille img 
@@ -173,7 +175,11 @@ margin-top: -10px;
 /* ------- Footer ------- */
 .container 
 {
-    margin-left: 45px;
+    margin-left: 18px;
+}
+.footer_col 
+{
+    margin-left: 15px;
 }
 
 }
